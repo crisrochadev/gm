@@ -67,7 +67,7 @@ window.addEventListener("scroll", function () {
     logo.src = "./cdn/img/logo_white.png";
   } else {
     menu.classList.remove("scroll");
-    logo.src = "/cdn/img/logo.png";
+    logo.src = "./cdn/img/logo.png";
   }
 });
 
