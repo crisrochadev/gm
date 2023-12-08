@@ -3,7 +3,7 @@
  */
 $(function loadImg() {
   for (let i = 1; i <= 28; i++) {
-    let url = `/cdn/img/project/${i}.jpg`;
+    let url = `./cdn/img/project/${i}.jpg`;
    
     let img = new Image();
     img.src = url;
