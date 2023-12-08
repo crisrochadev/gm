@@ -46,8 +46,8 @@ $(function loadImg() {
 
 
 
-// const clientNumber = '5547992746144';
-const clientNumber = '5547992321879';
+const clientNumber = '5547992746144';
+// const clientNumber = '5547992321879';
 
 $(function () {
   $(".main_header_content_menu_mobile_obj").on("click", function () {
@@ -148,7 +148,6 @@ function sendMessage(e, position = '') {
 }
 
 function sendMessage2(e){
-  console.log('clicou')
   sendMessage(e,2)
 }
 $("#phone").on("input", function (e) {
