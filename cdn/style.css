@@ -510,7 +510,7 @@ h1 {
 .main_tutor_contentimg{
   display: flex;
   width:auto;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap:10px;
@@ -520,7 +520,8 @@ h1 {
   width:60px;
 }
 .main_tutor_content > header h1 {
-  font-size: 1.3em;
+  font-size: 1.6em;
+  color:white !important;
   margin-bottom: 10px;
 }
 .main_tutor_content > header p {
@@ -539,6 +540,8 @@ h1 {
 .main_tutor_content_history h2 {
   font-size: 2em;
   margin: 20px 0;
+  color:#19b721 !important;
+  text-transform: uppercase;
 }
 .main_tutor_content_history p {
   margin-bottom: 20px;
@@ -553,7 +556,7 @@ h1 {
   padding: 20px;
 }
 .main_contact{
-  background-color: #b71919;
+  background-color: #323644;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 4px rgba(0,0,0,.25);
