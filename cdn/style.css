@@ -4,7 +4,7 @@
     top: -190px;
     transform: rotate(180deg);
     height: 200px;
-    background-image: url('cdn/img/wave.svg');
+    background-image: url('./img/wave.svg');
     background-size: cover;
     background-repeat: no-repeat;
    }
@@ -74,7 +74,7 @@
 /* Call to Action */
 .main_cta {
   width: 100%;
-  background-image: url("../cdn/img/bg_main_home.png");
+  background-image: url("./img/bg_main_home.png");
   background-color: #2d3142;
   background-repeat: no-repeat;
   background-position: center center;
