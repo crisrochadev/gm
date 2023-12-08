@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Exemplo de site por Cris Rocha, desenvolvido durante o curso HTML e CSS Essentials Upinside."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- <link rel="canonical" href=""> -->
+
+    <link rel="stylesheet" href="cdn/fonticon.css" />
+    <link rel="stylesheet" href="cdn/boot.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="cdn/style.css" />
+    <title>Metalúrgica GM - Rio Negrinho</title>
+  </head>
+  <body>
+    <header class="main_header" id="main_header">
+      <div class="main_header_content" id="main_header_content">
+        <a href="/" class="logo">
+          <img
+            src="/cdn/img/logo.png"
+            id="logo"
+            alt="Logotipo metalúrgica GM"
+            title="Metalúrgica GM"
+          />
+        </a>
+        <nav class="main_header_content_menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#easys">Facilidades</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <nav class="main_header_content_menu_mobile">
+          <ul>
+            <li>
+              <span
+                class="icon-menu icon-notext main_header_content_menu_mobile_obj"
+              ></span>
+              <ul class="main_header_content_menu_mobile_sub ds_none">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre nós</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#easys">Facilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main_cta" id="home">
+        <article class="main_cta_content">
+          <div class="main_cta_content_spacer">
+            <header>
+              <h1>
+                Soluções personalizadas de portões, grades e estruturas
+                metálicas duráveis
+              </h1>
+            </header>
+            <p>
+              Experiência metalúrgica única, proporcionando durabilidade e
+              sofisticação em cada projeto.
+            </p>
+            <p><a href="#contact" class="btn">Faça um orçamento</a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="div"></div>
+
+      <section class="main_blog" id="services">
+        <header class="main_blog_header">
+          <h1 class="icon-hammer">Nossos ultimos serviços</h1>
+          <p>Confira os ultimos trabalhos realizados pela metalúrgica GM</p>
+        </header>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+
+      <div id="zoom_image">
+        <button class="icon-cross"></button>
+        <img src="/cdn/img/project/1.jpg" alt="" />
+      </div>
+
+      <article class="main_optin">
+        <div class="main_optin_content">
+          <header>
+            <h1>Precisa de um orçamento rápido?</h1>
+            <p>Nos envie uma mensagem pelo whatsapp!</p>
+          </header>
+          <div class="form">
+            <input type="text" placeholder="Seu Nome" id="name" />
+            <input type="text" placeholder="Seu Telefone" id="phone" />
+            <button
+              onclick="sendMessage()"
+              class=""
+              type="button"
+              id="btn_send"
+            >
+              <span class="icon-whatsapp"></span>
+              <span>Enviar</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="main_course" id="about">
+        <header class="main_course_header">
+          <img src="/cdn/img/logo.png" alt="Html5 e Css3 Essentials" />
+          <h1 class="icon-radio-checked2">Experiência em Metalúrgia</h1>
+          <p>
+            Com um ano de dedicação, a Metalúrgica GM se destaca na fabricação
+            de estruturas metálicas, portões, cercas, grades e portas móveis de
+            ferro, garantindo total satisfação.
+          </p>
+        </header>
+        <div class="main_course_content">
+          <article>
+            <h2>Estruturas Metálicas</h2>
+            <p>
+              Desenvolvemos estruturas metálicas sob medida, combinando
+              durabilidade e design inovador para atender às necessidades
+              específicas dos nossos clientes.
+            </p>
+          </article>
+          <article>
+            <h2>Portões Personalizados</h2>
+            <p>
+              Criamos portões exclusivos, unindo funcionalidade e estética,
+              proporcionando segurança e beleza para residências e empresas.
+            </p>
+          </article>
+          <article>
+            <h2>Cercas e Grades</h2>
+            <p>
+              Nossas cercas e grades são fabricadas com materiais de alta
+              qualidade, oferecendo segurança e proteção, sem comprometer a
+              elegância e o design.
+            </p>
+          </article>
+          <article>
+            <h2>Portas Móveis de Ferro</h2>
+            <p>
+              As portas móveis de ferro da Metalúrgica GM combinam resistência e
+              praticidade, proporcionando soluções funcionais para diversos
+              ambientes.
+            </p>
+          </article>
+        </div>
+      </article>
+
+      <section class="main_tutor" id="easys">
+        <div class="main_tutor_content">
+          <header>
+            <h1>Flexibilidade nos Pagamentos</h1>
+            <p>Pague com cartão, boleto, pix ou à vista, sem complicações.</p>
+          </header>
+          <div class="main_tutor_contentimg">
+            <img
+              src="/cdn/img/card.svg"
+              alt="GM Metalúrgia - Forma de Pagamento"
+              title="GM Metalúrgia - Forma de Pagamento"
+            />
+            <img
+              src="/cdn/img/ticket.svg"
+              alt="GM Metalúrgia - Forma de Pagamento"
+              title="GM Metalúrgia - Forma de Pagamento"
+            />
+            <img
+              src="/cdn/img/pix.svg"
+              alt="GM Metalúrgia - Forma de Pagamento"
+              title="GM Metalúrgia - Forma de Pagamento"
+            />
+            <img
+              src="/cdn/img/money.svg"
+              alt="GM Metalúrgia - Forma de Pagamento"
+              title="GM Metalúrgia - Forma de Pagamento"
+            />
+          </div>
+          <article class="main_tutor_content_history">
+            <header>
+              <h2>Transforme Ideias em Realidade!</h2>
+              <p>
+                Na Metalúrgica GM, estamos prontos para transformar sua ideia em
+                realidade. Peça um orçamento agora e garanta o melhor resultado
+                para o seu projeto.
+              </p>
+            </header>
+          </article>
+          <section class="main_contact">
+            <header>
+              <h2>Peça um orçamento agora mesmo!</h2>
+            </header>
+            <div class="form">
+              <input type="text" placeholder="Seu Nome" id="name2" />
+              <input type="text" placeholder="Seu Telefone" id="phone2" />
+              <button
+                onclick="sendMessage2()"
+                class="send_btn"
+                type="button"
+                id="btn_send"
+              >
+                <span class="icon-whatsapp"></span>
+                <span>Enviar</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div class="div"></div>
+    <section class="main_footer" id="contact">
+      <header>
+        <h1>Nos encontre</h1>
+      </header>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.0924248194397!2d-49.50326042383231!3d-26.22618626487096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ddd05ca91d761b%3A0xb8463410823c70f2!2sR.%20Valfrido%20Rueckl%20-%20Industrial%20Norte%2C%20Rio%20Negrinho%20-%20SC%2C%2089295-000!5e0!3m2!1spt-BR!2sbr!4v1702054009797!5m2!1spt-BR!2sbr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="infos">
+        <article>
+          <header>
+            <h2>Endereço</h2>
+          </header>
+
+          <p>
+            <span class="icon-location"></span>
+            <span>Rua Valfrido Rueckl - Industrial Norte, Rio Negrinho - SC</span>
+          </p>
+        </article>
+        <article>
+          <header>
+            <h2>Contato</h2>
+          </header>
+          <p>
+            <span class="icon-whatsapp"></span>
+            <span>47 99274-6144</span>
+          </p>
+          <p>
+            <span class="icon-mail"></span>
+            <span>jonatah722@gmail.com</span>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Site desenvolvido por
+        <a target="_blank" href="https://vidara.website">Vidara Websites</a>
+      </p>
+    </footer>
+    <script src="cdn/jquery-3.6.0.min.js"></script>
+    <script src="cdn/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SJP6QY29W1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SJP6QY29W1");
+    </script>
+  </body>
+</html>
