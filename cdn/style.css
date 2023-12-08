@@ -4,7 +4,7 @@
     top: -190px;
     transform: rotate(180deg);
     height: 200px;
-    background-image: url('/cdn/img/wave.svg');
+    background-image: url('./cdn/img/wave.svg');
     background-size: cover;
     background-repeat: no-repeat;
    }
@@ -275,15 +275,15 @@ h1 {
   background-color: #07570b;
 }
 .div.top{
-  background-image: url('/cdn/img/wave-top.svg');
+  background-image: url('./cdn/img/wave-top.svg');
   top: 45px !important;
 }
 .div.top-red{
-  background-image: url('/cdn/img/wave-top-red.svg');
+  background-image: url('./cdn/img/wave-top-red.svg');
   top: 0 !important;
 }
 .div.red{
-  background-image: url('/cdn/img/wave-red.svg');
+  background-image: url('./cdn/img/wave-red.svg');
   top: 0 !important;
   transform: rotate(360deg) !important;
 }

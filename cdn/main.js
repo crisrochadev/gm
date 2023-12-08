@@ -64,7 +64,7 @@ window.addEventListener("scroll", function () {
 
   if (rect.top < -(rect.height - 100)) {
     menu.classList.add("scroll");
-    logo.src = "/cdn/img/logo_white.png";
+    logo.src = "./cdn/img/logo_white.png";
   } else {
     menu.classList.remove("scroll");
     logo.src = "/cdn/img/logo.png";
