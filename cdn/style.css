@@ -98,31 +98,32 @@
   margin: 0 auto;
   position: relative;
   z-index: 5;
+  
 }
 .main_cta_content h1 {
   font-size: 3em;
   color: #fff;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
 }
 .main_cta_content p {
   font-size: 1.875em;
   color: #fff;
   font-weight: 300;
   margin: 20px 0;
-  text-align: center;
+  text-align: left;
 }
 .main_cta_content .btn {
   background-color: #b71919;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding: 10px 40px;
   border-radius: 5px;
 }
 .main_cta_content_spacer {
   margin: 0 auto;
   max-width: 1300px;
-  padding: 160px 40px;
+  padding: 160px 0;
 }
 
 /* Artigos */
@@ -134,11 +135,13 @@
 }
 .main_blog_header {
   margin:20px 0;
-  padding:0 40px;
+  padding:0 0px;
 }
 h1 {
   font-size:2.8em;
   color:#b71919;
+    
+  text-transform: uppercase;
 }
 .main_blog_header p{
   font-size:1.8em;
@@ -247,7 +250,7 @@ h1 {
   padding: 20px 5%;
 }
 .main_optin header{
-  padding: 20px 40px;
+  padding: 20px 0px;
 }
 .main_optin header p {
   color:#ddd;
@@ -257,7 +260,7 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   gap:15px;
-  margin: 10px 40px 40px;
+  margin: 10px 0px 40px;
   flex-wrap: wrap;
 }
 .main_optin .form input{
@@ -302,12 +305,13 @@ h1 {
 
 .main_course {
   width: 100%;
+  padding: 0 5%;
 }
 .main_course_header {
-  max-width: 780px;
+  width:100%;
   padding: 0 20px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   color: #333;
   margin-bottom: 40px;
 }
@@ -320,7 +324,7 @@ h1 {
   color:#2d3142
 }
 .main_course_content {
-  max-width: 1300px;
+  width:100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -501,7 +505,7 @@ h1 {
 }
 .main_tutor_content {
   max-width: calc(1300px - 80px);
-  padding: 40px;
+  padding: 40px 5%;
   margin: 0 auto;
   color: #fff;
   text-align: center;
@@ -542,11 +546,13 @@ h1 {
   margin: 20px 0;
   color:#19b721 !important;
   text-transform: uppercase;
+  
 }
 .main_tutor_content_history p {
-  margin-bottom: 20px;
-  padding: 0 20px;
-  font-size:1.2em
+  margin-bottom: 40px;
+  padding: 0 0px;
+  font-size:1.2em;
+  text-align: left;
 }
 .main_tutor_social_network {
   background-color: #b71919;
@@ -671,9 +677,26 @@ footer {
   padding: 20px 0;
   background-color: #ebebeb;
   border-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
 }
 footer a{
   color:#b71919
+}
+footer p{
+  font-size: 0.7em !important;
+}
+footer .vidara-logo{
+  width:30px;
+  height:30px;
+  position: relative;
+}
+footer .vidara-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* -------------------------------------- MOBILE */
 .main_header_content_menu_mobile {
@@ -740,7 +763,7 @@ footer a{
     font-size: 2.5em;
   }
   .main_cta_content_spacer {
-    padding: 100px 30px;
+    padding: 100px 0;
   }
 
   h1{
@@ -780,7 +803,9 @@ footer a{
   p{
     font-size: 1.5em !important;
   }
- 
+ .swiper{
+  height:550px;
+ }
 }
 /* 768px */
 @media (max-width: 48em) {
@@ -803,13 +828,13 @@ footer a{
     font-size: 2em;
   }
   .main_cta_content_spacer {
-    padding: 60px 30px;
+    padding: 60px 0;
   }
   .main_cta_content p {
     font-size: 1.2em;
   }
   .main_cta_content .btn {
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
 
   .main_blog {
@@ -823,14 +848,14 @@ footer a{
     grid-template-columns:repeat(3,1fr)
   }
   #zoom_image {
-    left:-30px;
+    left:0;
     height:100vh;
+    display: flex;
+    align-items: center;
   }
    #zoom_image img{
-    width:90%;
+    width:100%;
     height: auto;
-    margin-top:50%;
-    transform: translateY(-50%);
   }
   .main_course_rating_content h2 {
     font-size: 2em;
@@ -859,11 +884,14 @@ footer a{
     margin-top: 20px;
   }
 
+
+
+
 }
 /* 640px  */
 @media (max-width: 40em) {
   h1{
-    font-size:2.3em !important;
+    font-size:2.0em !important;
   }
   p{
     font-size: 1.4em !important;
@@ -900,7 +928,7 @@ footer a{
 /* 480px */
 @media (max-width: 30em) {
   h1{
-    font-size:2em !important;
+    font-size:1.5em !important;
   }
   p{
     font-size: 1.3em !important;
@@ -916,6 +944,9 @@ footer a{
   }
   .main_header_content_menu_mobile {
     flex-basis: calc(100% - 220px) !important;
+  }
+  .main_cta_content_spacer {
+    padding: 100px 0;
   }
   .main_blog #imgs {
     grid-template-columns: 1fr;
